@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print word Programming is like building a multilingual puzzle
+ * main -  print word Programming is like building a multilingual puzzle
  *
  * Return: Always 0 (Success)
  */
