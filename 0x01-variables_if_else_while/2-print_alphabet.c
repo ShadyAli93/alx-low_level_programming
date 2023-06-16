@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - for loop
@@ -7,9 +9,9 @@
  */
 int main(void)
 {
-for (int x = 'A'; x <= 'Z'; x++)
-{
-putchar(tolower(x));
-}
+char l;
+for (l = 'a'; l <= 'z'; l++)
+putchar(l);
+putchar('\n');
 return (0);
 }
