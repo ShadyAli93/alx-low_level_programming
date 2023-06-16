@@ -10,7 +10,7 @@
 int main(void)
 {
 char l;
-chat u;
+char u;
 for (l = 'a'; l <= 'z'; l++)
 {
 putchar(l);
