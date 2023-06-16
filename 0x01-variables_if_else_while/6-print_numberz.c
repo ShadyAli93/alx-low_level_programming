@@ -11,8 +11,9 @@ int main(void)
 {
 int n = 0;
 while (n <= 9)
-putchar('0' + n);
+putchar(n);
 n++;
+break;
 putchar('\n');
 return (0);
 }
