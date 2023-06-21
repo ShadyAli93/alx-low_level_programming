@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
- * _islower - if
- *
- *
+ * _isalpha - if
+ *@c: variable
+ *Return: 0 and 1
  */
-int _islower(int c);
+int _isalpha(int c)
 {
- if (c >='a' && c<=z)
-_putchar(c) 
-_putchar('\n');
+if ((c >= 'a' && c <= 'z') ||
+(c >= 'A' && c <= 'Z'))
+return (1);
+else
+return (0);
 }
