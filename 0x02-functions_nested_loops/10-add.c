@@ -6,7 +6,7 @@
  * add - sum
  *@a: variable
  *@b: variable
- *Return : a and b
+ *Return: a + b
  */
 int add(int a, int b)
 {
