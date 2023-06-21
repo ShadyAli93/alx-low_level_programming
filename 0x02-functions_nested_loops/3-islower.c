@@ -2,13 +2,13 @@
 
 /**
  * _islower - if
- *
- *
+ *@c: variable
+ *Return: 0 and 1
  */
-int _islower(int c);
+int _islower(int c)
 {
- if (c >='a' && c<=z)
-return(1) 
+if ( c >= 'a' && c <= 'z' )
+return(1);
 else
-return(2);
+return(0);
 }
