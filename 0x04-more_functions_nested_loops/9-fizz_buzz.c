@@ -2,7 +2,7 @@
 /**
  * main - if condition
  *
- *Return: no return
+ *Return: Always 0 (Success) 
  */
 
 int main(void)
