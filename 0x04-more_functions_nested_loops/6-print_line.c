@@ -10,12 +10,12 @@
  */
 void print_line(int n)
 {
-int l;
+int i;
 if (n <= 0)
 {
 _putchar('\n');
 }
-for (l = 0; l < n; l++)
+for (i = 0; i < n; i++)
 {
 _putchar('_');
 }
