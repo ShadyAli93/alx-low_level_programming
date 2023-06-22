@@ -15,9 +15,9 @@ if (size <= 0)
 {
 _putchar('\n');
 }
-for (r = 1; r <= size; r++)
+for (r = 0; r <= size; r++)
 {
-for (c = 1; c <= r; c++)
+for (c = 0; c <= r; c++)
 {
 _putchar('#');
 }
