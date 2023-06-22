@@ -28,5 +28,5 @@ printf("%d ", n);
 }
 }
 printf("\n");
-return(n);
+return (0);
 }
