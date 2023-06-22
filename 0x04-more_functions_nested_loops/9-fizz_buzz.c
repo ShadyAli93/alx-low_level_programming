@@ -2,7 +2,7 @@
 /**
  * main - if condition
  *
- *Return: Always 0 (Success) 
+ *Return: Always 0 (Success)
  */
 
 int main(void)
@@ -25,6 +25,10 @@ printf("Buzz ");
 else
 {
 printf("%d ", n);
+}
+if (n != 100)
+{
+printf(" ");
 }
 }
 printf("\n");
