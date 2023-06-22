@@ -4,7 +4,7 @@
 
 /**
  * print_line - for loop
- *
+ *@n: variable
  *
  *
  */
