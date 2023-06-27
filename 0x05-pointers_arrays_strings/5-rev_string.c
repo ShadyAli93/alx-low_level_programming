@@ -15,8 +15,10 @@ int r;
 while (s[c] != '\0')
 c++;
 for (r = 0; r < c; r++)
+{
 c--;
 rev = s[r];
 s[r] = s[c];
 s[c] = rev;
+}
 }
