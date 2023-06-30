@@ -1,18 +1,27 @@
 #include "main.h"
 /**
-*_strcat - print pointer rev
-*@dest: variables
-*@src: variables
-*Return: dest
-*/
+ * _strcat - strcat
+ * @dest: variables
+ * @src: variables
+ * Return: dest
+ */
 char *_strcat(char *dest, char *src)
 {
 int i;
-int n = 0;
-
-for (i = 0 ; i < n && src[i] != '\0' ; i++)
-dest[i] = src[i];
+int d;
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+d = 0;
+while (src[d] != '\0')
+{
+dest[i] = src[d];
+i++;
+d++;
+}
 dest[i] = '\0';
-
 return (dest);
 }
+
