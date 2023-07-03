@@ -12,5 +12,6 @@ for (l = 0; l < 8; l++)
 {
 _putchar(a[h][l]);
 }
+_putchar('\n');
 }
 }
