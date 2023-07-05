@@ -1,16 +1,14 @@
 #include "main.h"
 /**
- * int _strlen_recursion(char *s); -  rev_rec
+ * _strlen_recursion -  stl_rec
  * @s: variable
- *
+ *Return: 1 and 0
  */
 int _strlen_recursion(char *s)
 {
+if (*s == '\0')
 {
-if (*s != '\0')
-{
-return;
+return (0);
 }
-_strlen_recursion(s + 1);
-_putchar(*s);
+return (1 + _strlen_recursion(s + 1));
 }
