@@ -8,11 +8,11 @@
  */
 int prime_number(int x, int y)
 {
-	if (y == 1)
-		return (1);
-	else if (x % y == 0 && x > 0)
-		return (0);
-	return (prime_number(x, y - 1));
+if (y == 1)
+return (1);
+else if (x % y == 0 && x > 0)
+return (0);
+return (prime_number(x, y - 1));
 }
 /**
  * is_prime_number - primenumber
@@ -21,5 +21,7 @@ int prime_number(int x, int y)
  */
 int is_prime_number(int n)
 {
-	return (prime_number(n, 1));
+if (n <= 1)
+return (0);
+return (prime_number(n, 1));
 }
