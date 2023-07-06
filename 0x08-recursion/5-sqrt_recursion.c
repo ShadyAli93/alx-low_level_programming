@@ -16,7 +16,7 @@ int square_root(int x, int y)
 }
 /**
  * _sqrt_recursion - sqr_root
- * @n: Number Integer
+ * @n: variable 
  * Return: 1 and n
  */
 int _sqrt_recursion(int n)
