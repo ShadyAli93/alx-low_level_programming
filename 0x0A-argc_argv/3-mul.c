@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int  multi = 0;
-char err = "Error";
+char err[] = "Error";
 if (argc < 2)
 {
 printf("%s\n", err);
