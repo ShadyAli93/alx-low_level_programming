@@ -11,9 +11,10 @@
 int main(int argc, char *argv[])
 {
 int  multi = 0;
+char err = "Error";
 if (argc < 2)
 {
-printf("%s\n", "Error");
+printf("%s\n", err);
 return (1);
 }
 else
