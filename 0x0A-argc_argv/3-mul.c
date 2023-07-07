@@ -1,17 +1,25 @@
 #include "main.h"
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 /**
 * main - argc and argv
 * @argc: variable
 * @argv: variable
-* Return: 0;
+* Return: 0 and 1;
 */
 int main(int argc, char *argv[])
 {
-int i, mlti = 0;
-for (i = 0; i < argc; i++)
-printf("s\n", argv[i]);
-multi = multi * argv[i];
+int  multi = 0;
+if (argc < 2)
+{
+printf("%s\n", "Error");
+return (1);
+}
+else
+{
+multi = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", multi);
 return (0);
+}
 }
