@@ -14,9 +14,6 @@ int main(int argc, char *argv[])
 int i, l, sum = 0;
 if (argc < 2)
 printf("%d\n", 0);
-else if (!isdigit(argc))
-for (l = 0; l < argc; l++)
-return (1);
 else
 for (i = 0; i < argc; i++)
 sum += atoi(argv[i]);
