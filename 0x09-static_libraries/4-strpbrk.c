@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* _strspn - strspn
+* _strpbrk - strpbrk
 * @s: variable
 * @accept: variable
 * Return: 0
 */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 return (0);
 }
