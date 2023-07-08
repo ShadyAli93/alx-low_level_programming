@@ -15,12 +15,15 @@ if (argc < 2)
 printf("%d\n", 0);
 else
 for (i = 0; i < argc; i++)
+{
 if (!atoi(argv[i]))
 {
 printf("%s\n", "Error");
 return (1);
 }
+else
 sum += atoi(argv[i]);
+}
 printf("%d\n", sum);
 return (0);
 }
