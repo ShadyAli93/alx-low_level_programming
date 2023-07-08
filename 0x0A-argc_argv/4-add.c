@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int i, sum = 0;
 if (argc < 1)
 return (0);
-for (i = 0; i < argc; i++)
+for (i = 2; i < argc; i++)
 {
 if ((*argv[i] >= 'a' && *argv[i] >= 'z'))
 {
