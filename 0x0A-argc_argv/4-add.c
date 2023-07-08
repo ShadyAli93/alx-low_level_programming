@@ -17,6 +17,7 @@ for (i = 1; i < argc; i++)
 {
 if ((*argv[i] >= 'a' && *argv[i] >= 'z'))
 {
+argc < 1;
 printf("%s\n", "Error");
 return (1);
 }
