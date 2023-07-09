@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 * main - argc and argv
 * @argc: variable
@@ -15,7 +16,7 @@ if (argc < 1)
 return (0);
 for (i = 0; i < argc; i++)
 {
-if ((atoi(argv[i]) >= 'a' && atoi(argv[i]) >= 'z'))
+if (!isdigit(*argv[i])) 
 {
 printf("%s\n", "Error");
 return (1);
