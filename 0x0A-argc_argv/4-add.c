@@ -16,7 +16,7 @@ if (argc == 0)
 return (0);
 for (i = 1; i < argc; i++)
 {
-if ((*argv[i] >= 'a' && *argv[i] >= 'z'))
+if (!isdigit(*argv[i]))
 {
 printf("%s\n", "Error");
 return (1);
