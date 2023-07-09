@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
 * main - argc and argv
 * @argc: variable
@@ -10,16 +11,19 @@
 */
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
+int i, c, sum = 0;
 char err[] = "Error";
 if (argc == 0)
 return (0);
 for (i = 1; i < argc; i++)
 {
-if ((*argv[i] >= 'a' && *argv[i] >= 'z'))
+for (c = 0; c != '\0'; c++)
+{
+if (!isdigit(argv[i][c]))
 {
 printf("%s\n", err);
 return (1);
+}
 }
 sum += atoi(argv[i]);
 }
