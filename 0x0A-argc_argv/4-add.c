@@ -13,13 +13,14 @@ int main(int argc, char *argv[])
 {
 int i, c, sum = 0;
 char err[] = "Error";
-if (argc == 1)
+if (argc == 0)
 return (0);
 for (i = 1; i < argc; i++)
 {
+char *arg = argv[i];
 for (c = 0; c != '\0'; c++)
 {
-if (!isdigit(argv[i][c]))
+if (!isdigit(arg[c]))
 {
 printf("%s\n", err);
 return (1);
