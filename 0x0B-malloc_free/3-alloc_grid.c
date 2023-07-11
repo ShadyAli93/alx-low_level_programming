@@ -13,7 +13,7 @@ int i, n;
 if (width < 1 || height < 1)
 return (NULL);
 pntr = malloc(height * sizeof(int *));
-if (gridout == NULL)
+if (pntr == NULL)
 {
 free(pntr);
 return (NULL);
@@ -31,7 +31,7 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 for (n = 0; n < width; n++)
-gridout[i][n] = 0;
+pntr[i][n] = 0;
 return (pntr);
 }
 
