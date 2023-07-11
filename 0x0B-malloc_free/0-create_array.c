@@ -12,7 +12,7 @@ char *pntr;
 unsigned int i;
 pntr = malloc(sizeof(c) * size);
 if (size == 0 || pntr == NULL)
-return ("NULL");
+return (NULL);
 for (i = 0; i < size; i++)
 pntr[i] = c;
 return (pntr);
