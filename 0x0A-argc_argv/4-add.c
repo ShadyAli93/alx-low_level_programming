@@ -11,12 +11,13 @@
 */
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
+int i, j, sum = 0;
 if (argc == 0)
 return (0);
 for (i = 1; i < argc; i++)
 {
-if (!isdigit(*argv[i]))
+for (j = 0; j != '\0'; j++)
+if (!isdigit(argv[i][j]))
 {
 printf("%s\n", "Error");
 return (1);
