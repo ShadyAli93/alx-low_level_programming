@@ -11,10 +11,10 @@ int *array_range(int min, int max)
 int *pntr, i;
 if (min > max)
 return (NULL);
-pntr = malloc(sizeof(*pntr) * ((max - min)) + 1);
+pntr = malloc(sizeof(int) * ((max - min)) + 1);
 if (pntr == NULL)
 return (NULL);
-for (i = 0; i < ((mtax - min) + 1); i++)
+for (i = 0; i < ((max - min) + 1); i++)
 pntr[i] = min + i;
 return (pntr);
 }
