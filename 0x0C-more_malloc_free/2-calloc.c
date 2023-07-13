@@ -11,7 +11,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *pntr;
 pntr = malloc(nmemb * size);
-if ((nmemb == 0 || size == 0) && pntr == NULL)
+if (nmemb == 0 || size == 0)
+return (NULL);
+if (pntr == NULL)
 return (NULL);
 memset(pntr, 0, nmemb * size);
 return (pntr);
