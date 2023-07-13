@@ -15,6 +15,6 @@ if (nmemb == 0 || size == 0)
 return (NULL);
 if (pntr == NULL)
 return (NULL);
-memset(pntr, 0, nmemb * size);
+_memset(pntr, 0, nmemb * size);
 return (pntr);
 }
