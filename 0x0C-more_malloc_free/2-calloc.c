@@ -17,5 +17,5 @@ if (pntr == NULL)
 return (NULL);
 for (i = 0; i < (nmemb * size); i++)
 pntr[i] = 0;
-return (pntr)
+return (pntr);
 }
