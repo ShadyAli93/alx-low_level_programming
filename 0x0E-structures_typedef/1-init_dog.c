@@ -4,7 +4,7 @@
  * init_dog - dog
  * @d: variable
  * @name: variable
- * @float: variable
+ * @age: variable
  * @owner: variable
  * Return: null
  */
