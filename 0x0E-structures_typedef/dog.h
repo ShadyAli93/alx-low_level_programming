@@ -1,6 +1,3 @@
-#ifndef dog
-#define dog
-
 /**
  * struct dog - dog
  * @name: variable
