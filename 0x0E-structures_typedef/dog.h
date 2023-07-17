@@ -8,6 +8,7 @@
  * @owner: variable
  *
  */
+
 struct dog
 {
 char *name;
