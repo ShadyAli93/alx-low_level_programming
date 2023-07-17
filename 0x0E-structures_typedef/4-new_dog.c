@@ -16,11 +16,12 @@ if (pntr == NULL)
 return (NULL);
 if (name == NULL || owner == NULL)
 {
-free(pntr);
 free(pntr->owner);
 free(pntr->name);
+free(pntr);
 return (NULL);
 }
+else
 pntr->name = name;
 pntr->age = age;
 pntr->owner = owner;
