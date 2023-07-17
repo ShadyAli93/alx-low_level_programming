@@ -26,5 +26,8 @@ free(pntr);
 free(name);
 return (NULL);
 }
+pntr->name = name;
+pntr->age = age;
+pntr->owner = owner;
 return (pntr);
 }
