@@ -14,16 +14,11 @@ dog_t *pntr;
 pntr = malloc(sizeof(dog_t));
 if (pntr == NULL)
 return (NULL);
-if (name == NULL)
+if (name == NULL || owner == NULL)
 {
 free(pntr);
-free(owner);
-return (NULL);
-}
-if (owner == NULL)
-{
-free(pntr);
-free(name);
+free(pntr->owner);
+free(pntr->name);
 return (NULL);
 }
 pntr->name = name;
