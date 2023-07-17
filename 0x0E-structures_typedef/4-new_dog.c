@@ -16,8 +16,8 @@ if (pntr == NULL)
 return (NULL);
 if (name == NULL || owner == NULL)
 {
-free(pntr->owner);
-free(pntr->name);
+free(name);
+free(owner);
 free(pntr);
 return (NULL);
 }
