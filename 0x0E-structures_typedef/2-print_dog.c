@@ -5,7 +5,7 @@
  * @d: variable
  * Return: null
  */
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
 if (d == 0)
 return;
