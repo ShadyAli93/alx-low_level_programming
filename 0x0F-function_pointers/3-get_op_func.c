@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * get_op_func - func
@@ -15,5 +17,10 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
+int i = 0;
+while (s && ops[i].op != 0)
+{
+i++;
+}
+return(NULL);
 }
