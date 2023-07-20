@@ -13,7 +13,7 @@ va_list ap;
 int i = 0;
 char *s;
 va_start(ap, format);
-while (format != NULL && format[i] != NULL)
+while (format != NULL && format[i] != '\0')
 {
 switch (format[i])
 {
@@ -36,8 +36,8 @@ break;
 printf("%s", s);
 break;
 }
-if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
-format[i] == 's') && format[(i + 1)] != '\0')
+if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+format[i] == 's')
 printf(",");
 i++;
 }
