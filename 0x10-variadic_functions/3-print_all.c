@@ -13,7 +13,7 @@ va_list ap;
 int i = 0;
 char *s;
 va_start(ap, format);
-while (format != NULL)
+while (format != NULL && format[i] != NULL)
 {
 switch (format[i])
 {
