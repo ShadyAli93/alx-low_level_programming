@@ -14,9 +14,9 @@ va_list ap;
 unsigned int i;
 char *s;
 va_start(ap, n);
-s = va_arg(ap, char *);
 for (i = 0; i < n; i++)
 {
+s = va_arg(ap, char *);
 if (s == NULL)
 {
 printf("(nil)");
