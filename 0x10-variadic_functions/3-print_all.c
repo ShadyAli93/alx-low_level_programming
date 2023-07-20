@@ -36,6 +36,9 @@ break;
 printf("%s", s);
 break;
 }
+if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
+format[i] == 's')
+printf(",");
 i++;
 }
 va_end(ap);
