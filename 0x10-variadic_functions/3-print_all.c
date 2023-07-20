@@ -14,6 +14,7 @@ int i = 0;
 char *s;
 va_start(ap, format);
 while (format != NULL)
+{
 switch (format[i])
 {
 case 'c':
@@ -34,6 +35,8 @@ break;
 }
 printf("%s", s);
 break;
+}
+i++;
 }
 va_end(ap);
 printf("\n");
