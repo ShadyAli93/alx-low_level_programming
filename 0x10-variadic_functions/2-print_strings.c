@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 {
 if (s == NULL)
 {
-printf("nil");
+printf("(nil)");
 }
 else
 {
