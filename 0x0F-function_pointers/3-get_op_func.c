@@ -22,5 +22,5 @@ while (s && ops[i].op != 0)
 {
 i++;
 }
-return(NULL);
+return (NULL);
 }
