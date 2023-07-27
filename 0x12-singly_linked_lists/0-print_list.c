@@ -5,7 +5,7 @@
 /**
  * print_list - print the elements
  * @h: variable
- * Return: amount of nodes of the linked list.
+ * Return: c
  */
 
 size_t print_list(const list_t *h)
