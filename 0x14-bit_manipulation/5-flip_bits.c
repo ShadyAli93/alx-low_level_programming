@@ -14,8 +14,7 @@ unsigned int c = 0;
 unsigned int nm = n ^ m;
 while (nm) 
 {
-if (nm & 1)
-c++;
+c += nm & 1;
 nm >>= 1;
 }
 return (c);
