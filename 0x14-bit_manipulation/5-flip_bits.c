@@ -8,11 +8,11 @@
  *@index: variable
  *Return: -1 and 1
 */
-unsigned int flip_bits(unsigned long int n, unsigned long int m) 
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned int c = 0;
 unsigned int nm = n ^ m;
-while (nm) 
+while (nm)
 {
 c += nm & 1;
 nm >>= 1;
