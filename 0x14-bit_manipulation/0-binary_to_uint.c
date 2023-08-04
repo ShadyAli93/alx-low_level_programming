@@ -21,7 +21,8 @@ if (b[i] < '0' || b[i] > '1')
 {
 return (0);
 }
-conv = (conv << 1) + (b[i] - '0');
+conv << 1;
+b[i] - '0';
 i++;
 }
 return (conv);
