@@ -1,9 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <fcntl.h>
 
 /**
  * read_textfile - read
@@ -27,7 +22,6 @@ if (buffer == NULL)
 return (0);
 r = read(fd, buffer, letters);
 w = write(STDOUT_FILENO, buffer, r);
-free(buffer);
 close(fd);
 return (w);
 }
