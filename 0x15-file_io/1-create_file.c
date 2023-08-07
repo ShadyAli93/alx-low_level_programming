@@ -17,7 +17,10 @@ text_content = "";
 fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
-for (c = 0; text_content[c] != 0; c++)
+while (text_content[c] != 0)
+{
+c++;
+}
 write(fd, text_content, c);
 close(fd);
 return (1);
