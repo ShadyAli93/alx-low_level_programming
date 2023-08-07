@@ -19,9 +19,9 @@ if (fd == -1)
 return (-1);
 while (text_content[c] != 0)
 {
-write(fd, text_content, c);
 c++;
 }
+write(fd, text_content, c);
 close(fd);
 return (1);
 }
