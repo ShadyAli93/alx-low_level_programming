@@ -15,7 +15,7 @@ unsigned int c = 0;
 unsigned long int nm = n ^ m;
 while (nm != 0)
 {
-count += n ^ m & 1;
+c += nm & 1;
 nm >>= 1;
 }
 return (c);
