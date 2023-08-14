@@ -5,6 +5,7 @@
 /**
  * flip_bits - flip
  *@n: variable
+ *@m: variable
  *@index: variable
  *Return: -1 and 1
 */
@@ -14,8 +15,7 @@ unsigned int c = 0;
 unsigned long int nm = n ^ m;
 while (nm != 0)
 {
-if (nm & 1)
-c++;
+count += n ^ m & 1;
 nm >>= 1;
 }
 return (c);
