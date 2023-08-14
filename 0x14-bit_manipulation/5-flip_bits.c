@@ -6,7 +6,6 @@
  * flip_bits - flip
  *@n: variable
  *@m: variable
- *@index: variable
  *Return: -1 and 1
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
