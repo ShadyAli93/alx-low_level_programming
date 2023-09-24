@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint - Adds
- * head: variable
+ * @head: variable
  * @n: variable
  * Return: new
  */
