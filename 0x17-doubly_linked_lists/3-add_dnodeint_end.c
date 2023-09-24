@@ -3,8 +3,8 @@
 /**
  * add_dnodeint_end - Add
  * @head: varibale
- * @n: variable 
- * Return: null and new 
+ * @n: variable
+ * Return: null and new
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
