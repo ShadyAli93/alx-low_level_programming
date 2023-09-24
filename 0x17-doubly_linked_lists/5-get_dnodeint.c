@@ -4,7 +4,7 @@
  * get_dnodeint_at_index - index
  * @head: variable
  * @index: variable
- * Return: Null and head 
+ * Return: Null and head
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
