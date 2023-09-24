@@ -1,31 +1,50 @@
 #include "lists.h"
+
 /**
- * delete_dnodeint_at_index - delete
- *@head: variable
- *@index: variable
- * Return: 1 and -1
+ * delete_dnodeint_at_index - Delete
+ * @head: variable
+ * @index: variable
+ * Return: 1 &  -1
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *temp, *next;
-unsigned int i;
+dlistint_t *node;
+unsigned int count;
 if (*head == NULL)
 return (-1);
-temp = *head;
+
+node = *head;
 if (index == 0)
 {
-*head = temp->next;
-temp->prev = NULL;
-free(temp);
+*head = node->next;
+if (node->next != NULL)
+{
+node->next->prev = NULL;
+}
+free(node);
 return (1);
 }
-for (i = 0; temp != NULL && i < index - 1; i++)
-temp = temp->next;
-if (temp == NULL || temp->next == NULL)
+for (count = 0; node != NULL && count < index - 1 ; count++)
+{
+node = node->next;
+}
+if (node == NULL || node->next == NULL)
+{
 return (-1);
-next = temp->next->next;
-free(temp->next);
-temp->next = next;
+}
+if (node->next->next != NULL)
+{
+node->next = node->next->next;
+free(node->next->prev);
+node->next->prev = node;
 return (1);
+}
+else
+{
+free(node->next);
+node->next = NULL;
+return (1);
+}
+return (-1);
 }
